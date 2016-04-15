@@ -1,0 +1,176 @@
+;########################## CURSOR ########################################
+;######################################### NeOn mIRC Script #################
+;##########################################################################
+
+alias rato {
+  if $dialog(rato) = $null { dialog -ma rato rato }
+  else halt
+}
+dialog rato {
+  title "Курсоры"
+  size -1 -1 208 390
+  option pixels
+  icon $scriptdirdll/colcontrol.dll $+, 0
+  check "Вкл/Выкл", 27, 7 8 74 16
+  box "Курсоры - 1", 80, 4 34 200 90
+  icon 2, 15 50 20 30,  $shortfn(files\cursor\CUrsor1.cur), 0
+  icon 3, 15 90 20 30,  $shortfn(files\cursor\CUrsor2.cur), 0
+  icon 4, 105 45 50 50,  $shortfn(files\cursor\CUrsor4.cur), 0
+  icon 5, 105 85 50 50,  $shortfn(files\cursor\CUrsor3.cur), 0
+  radio "Blue", 6, 40 55 50 20
+  radio "Linux", 7, 40 95 50 20
+  radio "Wblue", 8, 140 55 50 20
+  radio "Conus", 9, 140 95 50 20
+  box "Курсоры - 2", 81, 3 130 200 90
+  icon 10, 15 150 20 20,  $shortfn(files\cursor\CUrsor5.ani), 0
+  icon 11, 9 185 30 30,  $shortfn(files\cursor\CUrsor6.ani), 0
+  icon 12, 105 145 50 50,  $shortfn(files\cursor\CUrsor7.ani), 0
+  icon 13, 115 190 20 20,  $shortfn(files\cursor\CUrsor8.ani), 0
+  radio "Chameleon", 14, 40 155 70 20
+  radio "Perl", 15, 40 195 50 20
+  radio "Rotate", 16, 140 155 50 20
+  radio "Mystical", 17, 140 195 60 20
+  box "Курсоры - 3", 82, 4 230 200 90
+  icon 19, 5 250 30 30,  $shortfn(files\cursor\CUrsor9.ani), 0
+  icon 20, 9 285 29 29,  $shortfn(files\cursor\CUrsor10.ani), 0
+  icon 21, 110 245 20 30,  $shortfn(files\cursor\CUrsor11.ani), 0
+  icon 22, 105 285 36 30,  $shortfn(files\cursor\CUrsor12.ani), 0
+  radio "Fire", 23, 40 255 50 20
+  radio "Lightning", 24, 40 295 60 20
+  radio "Matrix", 25, 140 255 50 20
+  radio "Fun", 26, 140 295 60 20
+  box "Курсоры - 4", 1, 4 329 200 56
+  icon 18, 9 347 30 30,  $shortfn(files\cursor\CUrsor13.cur), 0
+  icon 28, 105 350 29 29,  $shortfn(files\cursor\CUrsor14.cur), 0
+  radio "Green", 31, 42 354 50 20
+  radio "Red", 32, 138 355 60 20
+}
+
+
+
+on *:dialog:rato:*:*:{
+  if ($devent == init) {
+    dll libraries\mdx.dll MarkDialog $dname
+    if (%rato == blue) { did -c $dname 6 }
+    if (%rato == Linux) { did -c $dname 7 }
+    if (%rato == Wblue) { did -c $dname 8 }
+    if (%rato == Conus) { did -c $dname 9 }
+    if (%rato == Chameleon) { did -c $dname 14 }
+    if (%rato == Perl) { did -c $dname 15 }
+    if (%rato == Rotate) { did -c $dname 16 }
+    if (%rato == Mystical) { did -c $dname 17 }
+    if (%rato == Fire) { did -c $dname 23 }
+    if (%rato == Lightning) { did -c $dname 24 }
+    if (%rato == Matrix) { did -c $dname 25 }
+    if (%rato == Fun) { did -c $dname 26 }
+    if (%rato == Green) { did -c $dname 31 }
+    if (%rato == Red) { did -c $dname 32 }
+
+    if (%cursors == on) { did -c $dname 27 | did -e $dname 6,7,8,9,14,15,16,17,23,24,25,26 }
+    if (%cursors == off) { did -b $dname 6,7,8,9,14,15,16,17,23,24,25,26 }
+  }
+  if ($devent == menu) {
+    if ($did == 28) { dialog -s $dname $dialog($dname).x $dialog($dname).y $dialog($dname).cw 346 }
+    if ($did == 30) { dialog -s $dname $dialog($dname).x $dialog($dname).y $dialog($dname).cw 150 }
+  }
+  if ($devent == sclick) {
+    if ($did == 6) { 
+      set %rato blue
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor1.cur)
+    }
+    if ($did == 7) { 
+      set %rato Linux
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor2.cur)
+    }
+    if ($did == 8) { 
+      set %rato Wblue 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor4.cur)
+    }
+    if ($did == 9) { 
+      set %rato Conus 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor3.cur)
+    }
+    if ($did == 14) { 
+      set %rato Chameleon 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor5.ani)
+    }
+    if ($did == 15) { 
+      set %rato Perl 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor6.ani)
+    }
+    if ($did == 16) { 
+      set %rato Rotate 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor7.ani)
+    }
+    if ($did == 17) { 
+      set %rato Mystical 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor8.ani)
+    } 
+    if ($did == 23) { 
+      set %rato Fire 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor9.ani)
+    }
+    if ($did == 24) { 
+      set %rato Lightning 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor10.ani)
+    } 
+    if ($did == 25) { 
+      set %rato Matrix 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor11.ani)
+    }
+    if ($did == 26) { 
+      set %rato Fun 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor12.ani)
+    } 
+    if ($did == 31) { 
+      set %rato Green 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor13.cur)
+    } 
+    if ($did == 32) { 
+      set %rato Green 
+      cursordll SetMouseCursor $shortfn(files\cursor\CUrsor14.cur)
+    } 
+    if ($did == 27) { 
+      if (%cursors == on) { set %cursors off | did -b $dname 6,7,8,9,14,15,16,17,23,24,25,26 | cursordll RestoreCursor }
+      else { set %cursors on | did -e $dname 6,7,8,9,14,15,16,17,23,24,25,26 }
+      ratos
+    }
+  }
+}
+
+alias dodialog {
+  %x = $1
+  if ($1 == -md) { $iif($dialog($2),dialog -c $2,dialog -md $2 $2) }
+  else {
+    if (%x) { $iif($dialog(%x),dialog -c %x,dialog -m %x %x) }
+    else {
+      echo -a (dodialog error) | halt 
+    }
+    if ($2) { if ($dialog(%x)) { dialog -c %x | dialog -m %x %x }
+      else { dialog -m %x %x } 
+    }
+  }
+}
+
+alias ratos {
+  if (%cursors == on) {
+    if (%rato == blue) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor1.cur) }
+    if (%rato == Linux) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor2.cur) }
+    if (%rato == Conus) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor3.cur) }
+    if (%rato == Wblue) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor4.cur) }
+    if (%rato == Chameleon) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor5.ani) }
+    if (%rato == Perl) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor6.ani) }
+    if (%rato == Rotate) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor7.ani) }
+    if (%rato == Mystical) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor8.ani) }
+    if (%rato == Fire) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor9.ani) }
+    if (%rato == Lightning) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor10.ani) }
+    if (%rato == Matrix) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor11.ani) }
+    if (%rato == Fun) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor12.ani) }
+    if (%rato == Green) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor13.cur) }
+    if (%rato == Red) { cursordll SetMouseCursor $shortfn(files\cursor\CUrsor14.cur) }
+    if (%rato == selected) { cursordll SetMouseCursor $shortfn( $+ %cursor $+ ) }
+  }
+}
+
+alias cur { return $shortfn(libraries\cursor.dll) }
+alias cursordll { dll $shortfn(libraries\cursor.dll) $1- }

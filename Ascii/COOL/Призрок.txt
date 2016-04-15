@@ -1,0 +1,21 @@
+                                            
+ 2                  __---__                   
+ 2               _-       _--4______     
+ 4           __--2( /     \ )4XXXXXXXXXXXXX_          
+ 4         --XXX2(   O   O  )4XXXXXXXXXXXXXXX-        
+ 4         /XXX2(       U     )4        XXXXXXX\    
+ 4      /XXXXX2(              )--_ 4 XXXXXXXXXXX\     
+ 4     /XXXXX/2 (      O     )   4XXXXXX   \XXXXX\    
+ 4     XXXXX/2   /            4XXXXXX   2\__ 4\XXXXX--
+ 4     XXXXXX2__/          4XXXXXX       2  \__----   
+ 2___  4XXX2__/          4XXXXXX      2\__         ---  
+ 2-  --__/   ___/\  4XXXXXX          2  /  ___---=    
+ 2 -_    ___/    4XXXXXX             2 '--- 4XXXXXX    
+ 2   --\/4XXX\ XXXXXX                      /XXXXX    
+ 4     \XXXXXXXXX                        /XXXXX/    
+ 4      \XXXXXX                        _/XXXXX/     
+ 4        \XXXXX2--__/              __--4 XXXX/       
+ 4         --XXXXXXX2---------------  4XXXXX--        
+ 4            \XXXXXXXXXXXXXXXXXXXXXXXX-            
+ 4              --XXXXXXXXXXXXXXXXXX-               
+ 2                                                  

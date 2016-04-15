@@ -1,0 +1,17 @@
+5,1
+5,1
+5,1                XXXXXX XXXXXX                       
+5,1                  XXX   XXX                         
+5,1                   XX   XX                          
+5,1                    XX XX                           
+5,1                     X X                            
+5,1XXXXX X  X XXXX       X       XXXX XXX X   XXXX XXXX
+5,1  X   X  X X          X       X     X  X   X    XX  
+5,1  X   XXXX XX         X       XXX   X  X   XX    XX 
+5,1  X   X  X X         X X      X     X  X   X      XX
+5,1  X   X  X XXXX     XX XX     X    XXX XXX XXXX XXXX
+5,1                   XX   XX                          
+5,1                  XXX    XX                         
+5,1                 XXX    XXXX                        
+5,1               XXXXXXX XXXXXXX                      
+5,1

@@ -1,0 +1,133 @@
+alias smiles dialog -m smiles smiles
+dialog smiles {
+  title "Смайлики"
+  size -1 -1 180 90
+  option dbu
+  edit "", 1, 5 5 85 10, read
+  radio "Обычный", 2, 95 5 33 10
+  radio "Разноцветный", 3, 130 5 47 10
+  button ":-)", 4, 10 20 20 12
+  button ";-)", 5, 30 20 20 12
+  button ":-)))", 6, 50 20 20 12
+  button ":-):-):-)", 7, 70 20 20 12
+  button ":->", 8, 90 20 20 12
+  button ":-,", 9, 110 20 20 12
+  button ":-|", 10, 130 20 20 12
+  button ">:-0", 11, 150 20 20 12
+  ;---
+  button ":-0", 12, 10 32 20 12
+  button ":-/", 13, 30 32 20 12
+  button ":-#", 14, 50 32 20 12
+  button ":-(", 15, 70 32 20 12
+  button ":-(((", 16, 90 32 20 12
+  button ":-(:-(:-(", 17, 110 32 20 12
+  button ">:-{", 18, 130 32 20 12
+  button "=:-)", 19, 150 32 20 12
+  ;---
+  button ":-<", 20, 10 44 20 12
+  button ":-E", 21, 30 44 20 12
+  button "<-)", 22, 50 44 20 12
+  button "<:-0", 23, 70 44 20 12
+  button ":-X", 24, 90 44 20 12
+  button ":-P", 25, 110 44 20 12
+  button ":-{}", 26, 130 44 20 12
+  button ":-@", 27, 150 44 20 12
+  ;---
+  button "(^_^)", 30, 10 56 20 12
+  button "(>_<)", 31, 30 56 20 12
+  button "(Т__T)", 32, 50 56 20 12
+  button "(-_-)", 33, 70 56 20 12
+  button "\(^o^)/", 34, 90 56 20 12
+  button "(*^_^*)", 35, 110 56 20 12
+  button "(p_-)", 36, 130 56 20 12
+  button "(-_-)zzz", 37, 150 56 20 12
+  ;---
+  button "Закрыть", 28, 70 72 30 14, cancel
+}
+
+on *:dialog:smiles:*:*: {
+  if ($devent == init) { did -c $dname 2 }
+  if ($devent == sclick) {
+    if ($did == 4) && ($did($dname,2).state) { did -ra $dname 1 Юмор | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-) | editbox -a %editbox.text }
+    if ($did == 4) && ($did($dname,3).state) { did -ra $dname 1 Юмор | set %smile.color :-) | smilecolor }
+    if ($did == 5) && ($did($dname,2).state) { did -ra $dname 1 Подмигивание одним глазом | set %editbox $editbox($а) | set %editbox.text %editbox $+ ;-) | editbox -a %editbox.text }
+    if ($did == 5) && ($did($dname,3).state) { did -ra $dname 1 Подмигивание одним глазом | set %smile.color ;-) | smilecolor }
+    if ($did == 6) && ($did($dname,2).state) { did -ra $dname 1 Смех | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-))) | editbox -a %editbox.text }
+    if ($did == 6) && ($did($dname,3).state) { did -ra $dname 1 Смех | set %smile.color :-))) | smilecolor }
+    if ($did == 7) && ($did($dname,2).state) { did -ra $dname 1 Громкий смех | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-):-):-) | editbox -a %editbox.text }
+    if ($did == 7) && ($did($dname,3).state) { did -ra $dname 1 Громкий смех | set %smile.color :-):-):-) | smilecolor }
+    if ($did == 8) && ($did($dname,2).state) { did -ra $dname 1 Сарказм | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-> | editbox -a %editbox.text }
+    if ($did == 8) && ($did($dname,3).state) { did -ra $dname 1 Сарказм | set %smile.color :-> | smilecolor }
+    if ($did == 9) && ($did($dname,2).state) { did -ra $dname 1 Ухмылка | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-, | editbox -a %editbox.text }
+    if ($did == 9) && ($did($dname,3).state) { did -ra $dname 1 Ухмылка | set %smile.color :-, | smilecolor }
+    if ($did == 10) && ($did($dname,2).state) { did -ra $dname 1 Серьезность | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-| | editbox -a %editbox.text }
+    if ($did == 10) && ($did($dname,3).state) { did -ra $dname 1 Серьезность | set %smile.color :-| | smilecolor }
+    if ($did == 11) && ($did($dname,2).state) { did -ra $dname 1 Злоба | set %editbox $editbox($active) | set %editbox.text %editbox $+ >:-0 | editbox -a %editbox.text }
+    if ($did == 11) && ($did($dname,3).state) { did -ra $dname 1 Злоба | set %smile.color >:-0 | smilecolor }
+    ;---
+    if ($did == 12) && ($did($dname,2).state) { did -ra $dname 1 Крик | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-0 | editbox -a %editbox.text }
+    if ($did == 12) && ($did($dname,3).state) { did -ra $dname 1 Крик | set %smile.color :-0 | smilecolor }
+    if ($did == 13) && ($did($dname,2).state) { did -ra $dname 1 Скептически настроен | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-/ | editbox -a %editbox.text }
+    if ($did == 13) && ($did($dname,3).state) { did -ra $dname 1 Скептически настроен | set %smile.color :-/ | smilecolor }
+    if ($did == 14) && ($did($dname,2).state) { did -ra $dname 1 Молчание | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-# | editbox -a %editbox.text }
+    if ($did == 14) && ($did($dname,3).state) { did -ra $dname 1 Молчание | set %smile.color :-# | smilecolor }
+    if ($did == 15) && ($did($dname,2).state) { did -ra $dname 1 Грусть | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-( | editbox -a %editbox.text }
+    if ($did == 15) && ($did($dname,3).state) { did -ra $dname 1 Грусть | set %smile.color :-( | smilecolor }
+    if ($did == 16) && ($did($dname,2).state) { did -ra $dname 1 Печаль | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-((( | editbox -a %editbox.text }
+    if ($did == 16) && ($did($dname,3).state) { did -ra $dname 1 Печаль | set %smile.color :-((( | smilecolor }
+    if ($did == 17) && ($did($dname,2).state) { did -ra $dname 1 Огромная печаль | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-(:-(:-( | editbox -a %editbox.text }
+    if ($did == 17) && ($did($dname,3).state) { did -ra $dname 1 Огромная печаль | set %smile.color :-(:-(:-( | smilecolor }
+    if ($did == 18) && ($did($dname,2).state) { did -ra $dname 1 Граф Дракула, вампир | set %editbox $editbox($active) | set %editbox.text %editbox $+ >:-{ | editbox -a %editbox.text }
+    if ($did == 18) && ($did($dname,3).state) { did -ra $dname 1 Граф Дракула, вампир | set %smile.color >:-{ | smilecolor }
+    if ($did == 19) && ($did($dname,2).state) { did -ra $dname 1 Панк | set %editbox $editbox($active) | set %editbox.text %editbox $+ =:-) | editbox -a %editbox.text }
+    if ($did == 19) && ($did($dname,3).state) { did -ra $dname 1 Панк | set %smile.color =:-) | smilecolor }
+    ;---
+    if ($did == 20) && ($did($dname,2).state) { did -ra $dname 1 Позабытый | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-< | editbox -a %editbox.text }
+    if ($did == 20) && ($did($dname,3).state) { did -ra $dname 1 Позабытый | set %smile.color :-< | smilecolor }
+    if ($did == 21) && ($did($dname,2).state) { did -ra $dname 1 Оскал | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-E | editbox -a %editbox.text }
+    if ($did == 21) && ($did($dname,3).state) { did -ra $dname 1 Оскал | set %smile.color :-E | smilecolor }
+    if ($did == 22) && ($did($dname,2).state) { did -ra $dname 1 Подмигивание двумя глазами | set %editbox $editbox($active) | set %editbox.text %editbox $+ <-) | editbox -a %editbox.text }
+    if ($did == 22) && ($did($dname,3).state) { did -ra $dname 1 Подмигивание двумя глазами | set %smile.color <-) | smilecolor }
+    if ($did == 23) && ($did($dname,2).state) { did -ra $dname 1 Ииик | set %editbox $editbox($active) | set %editbox.text %editbox $+ <:-0 | editbox -a %editbox.text }
+    if ($did == 23) && ($did($dname,3).state) { did -ra $dname 1 Ииик | set %smile.color <:-0 | smilecolor }
+    if ($did == 24) && ($did($dname,2).state) { did -ra $dname 1 Поцелуй | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-X | editbox -a %editbox.text }
+    if ($did == 24) && ($did($dname,3).state) { did -ra $dname 1 Поцелуй | set %smile.color :-X | smilecolor }
+    if ($did == 25) && ($did($dname,2).state) { did -ra $dname 1 Высунул язык | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-P | editbox -a %editbox.text }
+    if ($did == 25) && ($did($dname,3).state) { did -ra $dname 1 Высунул язык | set %smile.color :-P | smilecolor }
+    if ($did == 26) && ($did($dname,2).state) { did -ra $dname 1 Женские губы | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-{} | editbox -a %editbox.text }
+    if ($did == 26) && ($did($dname,3).state) { did -ra $dname 1 Женские губы | set %smile.color :-{} | smilecolor }
+    if ($did == 27) && ($did($dname,2).state) { did -ra $dname 1 Крикун | set %editbox $editbox($active) | set %editbox.text %editbox $+ :-@ | editbox -a %editbox.text }
+    if ($did == 27) && ($did($dname,3).state) { did -ra $dname 1 Крикун | set %smile.color :-@ | smilecolor }
+    ;---
+    if ($did == 30) && ($did($dname,2).state) { did -ra $dname 1 Улыбка | set %editbox $editbox($active) | set %editbox.text %editbox $+ (^_^) | editbox -a %editbox.text }
+    if ($did == 30) && ($did($dname,3).state) { did -ra $dname 1 Улыбка | set %smile.color (^_^) | smilecolor }
+    if ($did == 31) && ($did($dname,2).state) { did -ra $dname 1 Ой! | set %editbox $editbox($active) | set %editbox.text %editbox $+ (>_<) | editbox -a %editbox.text }
+    if ($did == 31) && ($did($dname,3).state) { did -ra $dname 1 Ой! | set %smile.color (>_<) | smilecolor }
+    if ($did == 32) && ($did($dname,2).state) { did -ra $dname 1 Плачь | set %editbox $editbox($active) | set %editbox.text %editbox $+ (Т__T) | editbox -a %editbox.text }
+    if ($did == 32) && ($did($dname,3).state) { did -ra $dname 1 Плачь | set %smile.color (Т__T) | smilecolor }
+    if ($did == 33) && ($did($dname,2).state) { did -ra $dname 1 Недоволен | set %editbox $editbox($active) | set %editbox.text %editbox $+ (-_-) | editbox -a %editbox.text }
+    if ($did == 33) && ($did($dname,3).state) { did -ra $dname 1 Недоволен | set %smile.color (-_-) | smilecolor }
+    if ($did == 34) && ($did($dname,2).state) { did -ra $dname 1 Вау! | set %editbox $editbox($active) | set %editbox.text %editbox $+ \(^o^)/ | editbox -a %editbox.text }
+    if ($did == 34) && ($did($dname,3).state) { did -ra $dname 1 Вау! | set %smile.color \(^o^)/ | smilecolor }
+    if ($did == 35) && ($did($dname,2).state) { did -ra $dname 1 Улыбается и краснеет | set %editbox $editbox($active) | set %editbox.text %editbox $+ (*^_^*) | editbox -a %editbox.text }
+    if ($did == 35) && ($did($dname,3).state) { did -ra $dname 1 Улыбается и краснеет | set %smile.color (*^_^*) | smilecolor }
+    if ($did == 36) && ($did($dname,2).state) { did -ra $dname 1 Подозрительно всматривается | set %editbox $editbox($active) | set %editbox.text %editbox $+ (p_-) | editbox -a %editbox.text }
+    if ($did == 36) && ($did($dname,3).state) { did -ra $dname 1 Подозрительно всматривается | set %smile.color (p_-) | smilecolor }
+    if ($did == 37) && ($did($dname,2).state) { did -ra $dname 1 Спит | set %editbox $editbox($active) | set %editbox.text %editbox $+ (-_-)zzz | editbox -a %editbox.text }
+    if ($did == 37) && ($did($dname,3).state) { did -ra $dname 1 Спит | set %smile.color (-_-)zzz | smilecolor }
+
+    ;---
+  }
+}
+
+alias smilecolor { set %i 1
+  set %message.smile $editbox($active)
+  while (%i <= $len(%smile.color)) {
+    set %message.smile %message.smile $+ $chr(3) $+ $rand(0,14) $+ $chr(44) $+ 15 $+ $mid(%smile.color,%i,1) $+  
+    inc %i
+  }
+  editbox -a %message.smile
+  unset %message.smile
+  unset %i
+  ; unset %smile.color
+}

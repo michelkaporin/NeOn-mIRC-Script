@@ -1,0 +1,30 @@
+icons\settings.ico*"Установки"*/mirc.options*"/mirc.options"
+-
+icons\favorites.ico*"Избранные каналы"*/mirc.favorites*"/mirc.favorites"
+icons\channels.ico*"Список каналов"*/mirc.channels*"/mirc.channels"
+icons\send.ico*"Послать файл"*/mirc.send*"/mirc.send"
+-
+icons\cpanel.ico*"Контрольная панель"*/cpanel*"/cpanel"
+-
+icons\nickcolors.ico*"Цвета ников"*/nickcolors*"/nickcolors"
+icons\skins.ico*"Менеджер скинов"*/skins*"/skins"
+icons\autoid.ico*"Автоидентификация"*/autoid*"/autoid"
+icons\fkeys.ico*"Функциональные клавиши"*/fkeys*"/fkeys"
+icons\away.ico*"Система away"*/awayer*"/awayer"
+script\Qblock\icons\qblock.ico*"Фильтр сообщений"*/blocker*"/blocker"
+icons\alarm.ico*"Будильник"*/alarm*"/alarm"
+icons\antivirus.ico*"Антивирус"*/antivirus*"/antivirus"
+icons\memos.ico*"Доставка мемо"*/memos*"/memos"
+-
+icons\winamp.ico*"Winamp контроллер"*/winampcontrol*"/winampcontrol"
+icons\wprev.ico*"Предыдущая песня"*/ampprev*"/ampprev"
+icons\wstop.ico*"Стоп"*/ampstop*"/ampstop"
+icons\wplay.ico*"Играть"*/ampplay*"/ampplay"
+icons\wpause.ico*"Пауза"*/ampplaypause*"/ampplaypause"
+icons\wnext.ico*"Следующая песня"*/ampnext*"/ampnext"
+icons\wopen.ico*"Открыть файл"*/ampopen*"/ampopen"
+-
+icons\about.ico*"О NeOn mIRC Script"*/about*"/about"
+-
+icons\lamp.ico*"Статус"*/status*"/status"
+-

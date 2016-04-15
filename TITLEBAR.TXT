@@ -1,0 +1,115 @@
+.titlebar -.
+dll dll/Useless.dll SetLEDs 1
+.titlebar - ..
+.titlebar - ..:
+.titlebar - ..::
+dll dll/Useless.dll SetLEDs 2
+.titlebar - ..:: N
+.titlebar - ..::  e
+.titlebar - ..::    O
+.titlebar - ..::      n Скрипт
+dll dll/Useless.dll SetLEDs 3
+.titlebar - ..:: Ne
+.titlebar - ..:: NeO Ск
+.titlebar - ..:: NeOn Скрипт
+dll dll/Useless.dll SetLEDs 4
+.titlebar - ..:: B   
+.titlebar - ..::  y    
+.titlebar - ..::  NeOn Team 
+dll dll/Useless.dll SetLEDs 5
+.titlebar - ..:: Ne Скрипт:
+.titlebar - ..:: NeO Скрипт ::
+.titlebar - ..:: NeOn Скрипт ::.
+dll dll/Useless.dll SetLEDs 6
+.titlebar - ..:: Ne Скрипт ::..
+.titlebar - ..:: NeO Скрипт ::.. .
+.titlebar - ..:: NeOn Скрипт ::.. ..
+dll dll/Useless.dll SetLEDs 7
+.titlebar - ..::  NeOn Скрипт ::.. ..:
+.titlebar - ..::  NeOn Скрипт ::.. ..::
+.titlebar - ..::  NeOn Скрипт ::.. ..:: В
+dll dll/Useless.dll SetLEDs 1
+.titlebar - ..:: NeOn Скрипт::.. ..:: Ве
+.titlebar - ..:: NeOn Скрипт::.. ..:: Вер
+.titlebar - ..:: NeOn Скрипт::.. ..:: Верс
+dll dll/Useless.dll SetLEDs 2
+.titlebar - ..:: NeOn Скрипт::.. ..:: Верси
+.titlebar - ..:: NeOn Скрипт::.. ..:: Версия
+.titlebar - ..:: NeOn Скрипт::.. ..:: Версия 9
+dll dll/Useless.dll SetLEDs 3
+.titlebar - ..:: NeOn Скрипт ::.. ..:: Версия 9.
+.titlebar - ..:: NeOn Скрипт ::.. ..:: Версия 9.0
+.titlebar - ..:: NeOn Скрипт ::.. ..:: Версия 9.0 :
+dll dll/Useless.dll SetLEDs 4
+.titlebar - ..:: NeOn Скрипт ::.. ..:: Версия 9.0 ::
+.titlebar - ..:: NeOn Скрипт ::.. ..:: Версия 9.0 ::.
+.titlebar - ..:: NeOn Скрипт ::.. ..:: Версия 9.0 ::..
+dll dll/Useless.dll SetLEDs 5
+.titlebar - .
+.titlebar - ..
+.titlebar - ..:
+dll dll/Useless.dll SetLEDs 6
+.titlebar - ..::
+.titlebar - ..:: C
+.titlebar - ..:: Co
+dll dll/Useless.dll SetLEDs 7
+.titlebar - ..:: Cop
+.titlebar - ..:: Copy
+.titlebar - ..:: Copyr
+dll dll/Useless.dll SetLEDs 1
+.titlebar - ..:: Copyri
+.titlebar - ..:: Copyrig
+.titlebar - ..:: Copyrigh
+dll dll/Useless.dll SetLEDs 2
+.titlebar - ..:: Copyright
+.titlebar - ..:: Copyright 
+.titlebar - ..:: Copyright 
+dll dll/Useless.dll SetLEDs 3
+.titlebar - ..:: Copyright ©
+.titlebar - ..:: Copyright © 2
+.titlebar - ..:: Copyright © 20
+dll dll/Useless.dll SetLEDs 4
+.titlebar - ..:: Copyright © 201
+.titlebar - ..:: Copyright © 2010
+.titlebar - ..:: Copyright © 2010 N
+.titlebar - ..:: Copyright © 2010 e
+dll dll/Useless.dll SetLEDs 5
+.titlebar - ..:: Copyright © 2010 O
+.titlebar - ..:: Copyright © 2010 n
+.titlebar - ..:: Copyright © 2010 
+dll dll/Useless.dll SetLEDs 6
+.titlebar - ..:: Copyright © 2010 T
+.titlebar - ..:: Copyright © 2010 e
+.titlebar - ..:: Copyright © 2010 a
+.titlebar - ..:: Copyright © 2010 m
+dll dll/Useless.dll SetLEDs 1
+.titlebar - ..:: Copyright © 2010 NeOn Team ::.. All Rights Reserved.
+.titlebar - .
+.titlebar - ..
+dll dll/Useless.dll SetLEDs 2
+.titlebar - ..:
+.titlebar - ..::
+.titlebar - ..:: A
+dll dll/Useless.dll SetLEDs 3
+.titlebar - ..:: Al
+.titlebar - ..:: All
+.titlebar - ..:: All R
+dll dll/Useless.dll SetLEDs 4
+.titlebar - ..:: All Ri
+.titlebar - ..:: All Rig
+.titlebar - ..:: All Righ
+dll dll/Useless.dll SetLEDs 5
+.titlebar - ..:: All Rights
+.titlebar - ..:: All Rights R
+.titlebar - ..:: All Rights Re
+dll dll/Useless.dll SetLEDs 6
+.titlebar - ..:: All Rights Rese
+.titlebar - ..:: All Rights Reserved
+.titlebar - ..:: All Rights Reserved :
+dll dll/Useless.dll SetLEDs 7
+.titlebar - ..:: All Rights Reserved ::
+.titlebar - ..:: All Rights Reserved ::.
+.titlebar - ..:: All Rights Reserved ::..
+dll dll/Useless.dll SetLEDs 1
+.titlebar - ..:: NeOn Скрипт ::.. ..:: Версия 9.0 ::..
+.titlebar - ..:: NeOn Скрипт ::.. ..:: Версия 9.0 ::..

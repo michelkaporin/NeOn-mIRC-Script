@@ -1,0 +1,19 @@
+ 8,1The fleecy cloud may kiss the sky.   
+ 8,1The rose may kiss the butterfly.     
+ 8,1The morning dew may kiss the grass.  
+ 8,1And you my friend may kiss my....    
+ 15,1            .         .              
+ 15,1            |         |              
+ 15,1            j    :    l              
+ 15,1           /           \             
+ 15,1          /             \            
+ 15,1         Y       .       Y           
+ 15,1         |       |       |           
+ 15,1         l "----~Y~----" !           
+ 15,1          \      |      /            
+ 15,1           Y     |     Y             
+ 15,1           |     I     |             
+4,1***************************************
+
+
+
